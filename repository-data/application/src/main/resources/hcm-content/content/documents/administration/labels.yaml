@@ -28,26 +28,64 @@
     jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
     jcr:uuid: fbe677f7-7fe7-4696-b778-05f5fe97afea
     hippo:name: Homepage
-    /homepage:
+    /homepage[1]:
       jcr:primaryType: resourcebundle:resourcebundle
       jcr:mixinTypes: ['mix:referenceable']
       jcr:uuid: 2c2d09eb-1dfb-454f-aafd-545aa9e732d6
-      hippo:availability: [live, preview]
+      hippo:availability: [live]
       hippostd:state: published
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2014-08-21T17:08:08.703+02:00
-      hippostdpubwf:lastModificationDate: 2014-08-21T17:11:53.242+02:00
+      hippostdpubwf:lastModificationDate: 2018-04-18T10:18:01.636+02:00
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2014-08-21T17:11:55.239+02:00
+      hippostdpubwf:publicationDate: 2018-04-18T10:18:04.133+02:00
       resourcebundle:descriptions: [Title displayed on homepage., Text displayed on
-          homepage.]
+          homepage., '']
       resourcebundle:id: essentials.homepage
-      resourcebundle:keys: [homepage.title, homepage.text]
+      resourcebundle:keys: [homepage.title, homepage.text, homepage.test]
       resourcebundle:messages: [Home Page, 'Every website comes with its own styling
           requirements. Hippo''s setup application can therefore not address site
           styling. Instead, the generated pages use minimal styling to render the
           content. It is the task of the Hippo developer to adjust the front-end to
-          the site''s needs.']
+          the site''s needs.', <script>alert('execute script from resourceBundle')</script>]
+    /homepage[2]:
+      jcr:primaryType: resourcebundle:resourcebundle
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: ecec013c-21a0-42df-adad-90c22487df43
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-08-21T17:08:08.703+02:00
+      hippostdpubwf:lastModificationDate: 2018-04-18T10:18:01.636+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      resourcebundle:descriptions: [Title displayed on homepage., Text displayed on
+          homepage., '']
+      resourcebundle:id: essentials.homepage
+      resourcebundle:keys: [homepage.title, homepage.text, homepage.test]
+      resourcebundle:messages: [Home Page, 'Every website comes with its own styling
+          requirements. Hippo''s setup application can therefore not address site
+          styling. Instead, the generated pages use minimal styling to render the
+          content. It is the task of the Hippo developer to adjust the front-end to
+          the site''s needs.', <script>alert('execute script from resourceBundle')</script>]
+    /homepage[3]:
+      jcr:primaryType: resourcebundle:resourcebundle
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 1c71f8f2-9e9a-4968-bdd7-701d4dea54f3
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-08-21T17:08:08.703+02:00
+      hippostdpubwf:lastModificationDate: 2018-04-18T10:17:48.584+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      resourcebundle:descriptions: [Title displayed on homepage., Text displayed on
+          homepage., '']
+      resourcebundle:id: essentials.homepage
+      resourcebundle:keys: [homepage.title, homepage.text, homepage.test]
+      resourcebundle:messages: [Home Page, 'Every website comes with its own styling
+          requirements. Hippo''s setup application can therefore not address site
+          styling. Instead, the generated pages use minimal styling to render the
+          content. It is the task of the Hippo developer to adjust the front-end to
+          the site''s needs.', <script>alert('execute script from resourceBundle')</script>]
   /pagenotfound:
     jcr:primaryType: hippo:handle
     jcr:mixinTypes: ['hippo:named', 'mix:referenceable']

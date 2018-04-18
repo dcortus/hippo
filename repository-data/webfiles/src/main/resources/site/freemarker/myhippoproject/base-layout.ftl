@@ -1,5 +1,6 @@
 <!doctype html>
 <#include "../include/imports.ftl">
+<@hst.messagesReplace>
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
@@ -31,3 +32,4 @@
     <@hst.headContributions categoryIncludes="htmlBodyEnd, scripts" xhtml=true/>
   </body>
 </html>
+</@hst.messagesReplace>

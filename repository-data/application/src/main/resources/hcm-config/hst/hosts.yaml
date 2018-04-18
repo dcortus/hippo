@@ -13,3 +13,5 @@ definitions:
           jcr:primaryType: hst:mount
           hst:homepage: root
           hst:mountpoint: /hst:hst/hst:sites/myhippoproject
+    /hst:hst/hst:hosts:
+      hst:defaultresourcebundleid: essentials.homepage
