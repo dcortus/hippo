@@ -1,0 +1,20 @@
+definitions:
+  config:
+    /hst:hst/hst:hosts/test-env/test:
+      .meta:residual-child-node-category: content
+      jcr:primaryType: hst:virtualhost
+      /hst:root:
+        .meta:residual-child-node-category: content
+        jcr:primaryType: hst:mount
+        hst:homepage: root
+        hst:mountpoint: /hst:hst/hst:sites/myhippoproject
+        /preview:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:mount
+          hst:alias: preview-test
+          hst:type: preview
+        /rest:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:mount
+          hst:alias: rest-test
+          hst:type: rest

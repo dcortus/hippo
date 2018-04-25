@@ -224,7 +224,7 @@
       <id>cargo.run</id>
       <properties>
         <!--Already defined in hippo-cms-project POM. Override here for project, if necessary-->
-        <!--<repo.bootstrap>true</repo.bootstrap>-->
+        <repo.bootstrap>full</repo.bootstrap>
       </properties>
       <build>
         <plugins>
